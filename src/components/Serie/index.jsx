@@ -7,15 +7,15 @@ export default function Serie({id, titulo, capa}){
   
     return(
         <>
-        <Link href={`/serie/${id}`}>
+        <Link href={`/series/${id}`}>
             <div className={styles.container}>
                 <div>
                     <h1>{titulo}</h1>
-                    <Image 
+                    <img
                     src={capa} 
                     alt={titulo} 
-                    width={500} 
-                    height={300} 
+                    width={200}
+                    height={309}
                     />
                 </div>
             </div>

@@ -1,39 +1,41 @@
 import styles from './styles.module.css'
-import { useEffect ,useState } from "react"
-import Serie from '../Serie'
+import { useEffect, useState } from "react"
 import axios from 'axios'
-import Image from 'next/image'
+import Link from 'next/link'
+import Serie from '../Serie'
 
-export default function ListSerie(){
- 
+export default function ListSerie() {
+
     const [series, setSeries] = useState([]);
-  
-    const pushSeries = async () =>{
+
+    const pushSeries = async () => {
         try {
-            const res = await axios.get('http://localhost:1337/api/series?populate=capa');
-            setSeries(res.data.data)
-            console.log(res.data);
-            } catch (error) {
-                console.log(error);
-            }
+            const res = await axios.get('http://localhost:1337/api/series?populate=*');
+            setSeries(res.data.data);
+        } catch (error) {
+            console.log(error);
+        }
     }
 
-//data.data.id
-    useEffect(() =>{
+    useEffect(() => {
         pushSeries();
     }, []);
 
-    return(
-        <>
-            <div>
+    return (
+        <div>
             {series?.map((serie) =>
-                <Serie
-                key={serie.id}
-                titulo={serie.attributes.titulo}
-                capa={serie.attributes.capa.data.attributes.url}
+                <Serie 
+                    key={serie.id}
+                    id={serie.id}
+                    titulo={serie.attributes.titulo}
+                    capa={"http://localhost:1337" + serie.attributes.capa.data.attributes.url}
+                    
                 />
-                )}
-            </div>    
-        </>
-        )
+    
+                
+
+
+            )}
+        </div>
+    )
 }
