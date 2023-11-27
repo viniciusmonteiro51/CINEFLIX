@@ -1,14 +1,17 @@
 import Cabecario from '@/components/Cabecario'
-import Serie from '@/components/Serie'
 import ListSerie from '@/components/ListSerie'
-import Menu from '@/components/Menu'
 import Header from '@/components/Header'
+import styles from '@/styles/home.module.css'
 export default function Home() {
   return (
     <>
-    <Cabecario/>
-    <Header/>
-    <ListSerie/>
+    <Cabecario/> 
+   
+    <Header/> 
+    <div className={styles.home}>
+      <ListSerie/>
+    </div>
+   
     </>
   )
 }

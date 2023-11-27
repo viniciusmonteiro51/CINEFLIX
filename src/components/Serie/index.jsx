@@ -8,7 +8,7 @@ export default function Serie({id, titulo, capa}){
     return(
         <>
         <Link href={`/series/${id}`}>
-            <div className={styles.container}>
+            <div className={styles.card}>
                 <div>
                     <h1>{titulo}</h1>
                     <img

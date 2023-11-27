@@ -1,0 +1,185 @@
+.containerPai {
+    width: 100%;
+    overflow: hidden;
+}
+
+.containerTamanho {
+  width: 100%;
+  height: 750px;
+  position: relative;
+}
+
+.capaFundo {
+    position: absolute;
+    opacity: .3;
+    height: inherit;
+    width: 100%;
+    min-width: 1440px;
+    
+}
+.infos {
+  display: flex;
+  gap: 2rem;
+  position: relative;
+}
+
+.capa {
+  width: 440px;
+  height: 655px;
+  margin: 3rem;
+}
+
+.containerInfos {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.tituloTemporada{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.infosDesc{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+.desc{
+    margin-top: 3rem;
+    max-width: 742px;
+}
+
+.idioma{
+    font-weight: bold;
+}
+
+.containerAvaliacao {
+  display: flex;
+  flex-direction: column;
+}
+
+.containerProgressResult {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.progressAvaliacao {
+  background-color: green;
+  height: 10px;
+}
+
+
+/*
+.containerPrincipal {
+  width: 100%;
+  overflow: hidden;
+}
+
+
+
+
+
+
+
+.imgFundo {
+  position: absolute;
+  opacity: .3;
+  height: inherit;
+  width: 100%;
+  min-width: 1440px;
+}
+
+
+
+.containerTituloTemporadaGeneroIdade {
+  display: flex;
+  flex-direction: column;
+}
+
+.containerTituloTemporada {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.containerIdadeGenero {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.idade {
+  border: 1px solid var(--black);
+  padding: 3px;
+}
+
+.containerGenero {
+  display: flex;
+  gap: 6px;
+}
+
+
+
+
+
+
+
+.containerPalavrasChaves {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.palavraChave {
+  background-color: lightgray;
+  border-radius: 4px;
+  padding: 3px;
+}
+
+.imagens {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.containerImagens {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(365px, 1fr));
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.imagem {
+  width: 365px;
+  height: 205px;
+}
+
+.elenco {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.containerElencoImagens {
+  width: 90%;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  overflow-x: auto;
+}
+
+.imagemElenco {
+  width: 138px;
+  height: 175px;
+}
+*/

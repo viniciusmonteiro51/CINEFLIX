@@ -22,7 +22,7 @@ export default function ListSerie() {
     }, []);
 
     return (
-        <div>
+        <div className={styles.listCard}>
             {series?.map((serie) =>
                 <Serie 
                     key={serie.id}
@@ -31,10 +31,6 @@ export default function ListSerie() {
                     capa={"http://localhost:1337" + serie.attributes.capa.data.attributes.url}
                     
                 />
-    
-                
-
-
             )}
         </div>
     )
